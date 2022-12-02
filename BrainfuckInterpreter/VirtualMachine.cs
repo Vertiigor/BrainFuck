@@ -12,15 +12,12 @@ namespace BrainfuckInterpreter
         public int InstructionPointer { get; set; }
         public byte[] Memory { get; }
         public int MemoryPointer { get; set; }
-
         private Dictionary<char, Action<IVirtualMachine>> commands;
 
         public VirtualMachine(string program, int memorySize)
         {
             Instructions = program;
-
             Memory = new byte[memorySize];
-
             InstructionPointer = 0;
 
             commands = new Dictionary<char, Action<IVirtualMachine>>();
@@ -28,7 +25,7 @@ namespace BrainfuckInterpreter
 
         public void RegisterCommand(char symbol, Action<IVirtualMachine> execute)
         {
-            if (!(commands.ContainsKey(symbol)))
+            if(!(commands.ContainsKey(symbol)))
             {
                 commands.Add(symbol, execute);
             }
@@ -38,15 +35,13 @@ namespace BrainfuckInterpreter
         {
             while(InstructionPointer < Instructions.Length)
             {
-                if (!commands.ContainsKey(Instructions[InstructionPointer]))
+                if(!commands.ContainsKey(Instructions[InstructionPointer]))
                 {
                     InstructionPointer++;
-
                     continue;
                 }
 
                 commands[Instructions[InstructionPointer]]?.Invoke(this);
-
                 InstructionPointer++;
             }
         }

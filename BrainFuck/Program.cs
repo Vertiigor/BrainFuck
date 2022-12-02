@@ -48,6 +48,7 @@ namespace BrainFuck
                 Brainfuck.Run(sierpinskiTriangleBrainfuckProgram, Console.Read, Console.Write);
                 Console.WriteLine("Это была демонстрация Brainfuck на примере построения треугольника Серпинского");
             }
+
             Console.ReadLine();
         }
     }

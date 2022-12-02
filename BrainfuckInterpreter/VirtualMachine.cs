@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BrainfuckInterpreter
+﻿namespace BrainfuckInterpreter
 {
     public class VirtualMachine : IVirtualMachine
     {
@@ -18,6 +12,7 @@ namespace BrainfuckInterpreter
         {
             Instructions = program;
             Memory = new byte[memorySize];
+            MemoryPointer = 0;
             InstructionPointer = 0;
 
             commands = new Dictionary<char, Action<IVirtualMachine>>();

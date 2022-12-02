@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainFuck", "BrainFuck\BrainFuck.csproj", "{29A837F3-2E5B-48AF-A6A0-578C249AD201}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainFuck", "BrainFuck\BrainFuck.csproj", "{29A837F3-2E5B-48AF-A6A0-578C249AD201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainfuckInterpreter", "BrainfuckInterpreter\BrainfuckInterpreter.csproj", "{5AE3FB19-C5F9-4686-9236-D998782C5D54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainfuckInterpreter", "BrainfuckInterpreter\BrainfuckInterpreter.csproj", "{5AE3FB19-C5F9-4686-9236-D998782C5D54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainfuckInterpreter.Tests", "BrainfuckInterpreter.Tests\BrainfuckInterpreter.Tests.csproj", "{E5D05E1F-DDB6-4F03-8E87-AF92BFE84A4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainfuckInterpreter.Tests", "BrainfuckInterpreter.Tests\BrainfuckInterpreter.Tests.csproj", "{E5D05E1F-DDB6-4F03-8E87-AF92BFE84A4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

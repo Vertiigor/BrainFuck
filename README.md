@@ -29,4 +29,6 @@ MemoryPointer - pointer to the current memory location. Initially, the pointer p
 | ,             | Enter a character and store its ASCII code in the byte of memory pointed to by the pointer.  |
 | >             | Shift memory pointer right by 1 byte.  |
 | <             | Shift memory pointer left by 1 byte.  |
-| a - z, 0 - 9  | store the ASCII code of this character in the byte of memory pointed to by the pointer.  |
+| a - z, 0 - 9  | Store the ASCII code of this character in the byte of memory pointed to by the pointer.  |
+| [             | If the value of the current cell is zero, move forward in the program text to the character following the corresponding ] (including nesting).  |
+| ]             | if the value of the current cell is not zero, go back through the program text to the character [ (taking into account nesting).  |

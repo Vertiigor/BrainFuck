@@ -39,17 +39,12 @@ namespace BrainFuck
   +   .   +   +   +   .   [   -   ]   <   ]   +   +   +   +   +
 ";
 
-        public static void Main(string[] args)
+        public static void Main()
         {
-            if (args.Contains("test"))
-                new AutoRun().Execute(new string[0]); // Запуск тестов
-            else
-            {
-                Brainfuck.Run(sierpinskiTriangleBrainfuckProgram, Console.Read, Console.Write);
-                Console.WriteLine("Это была демонстрация Brainfuck на примере построения треугольника Серпинского");
-            }
+            Brainfuck.Run(sierpinskiTriangleBrainfuckProgram, Console.Read, Console.Write);
+            Console.WriteLine("This was a Brainfuck demo using the Sierpinski triangle as an example.");
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }

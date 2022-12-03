@@ -7,7 +7,7 @@ I decided to create this interpreter in order to improve my skills.
 
 # Example of work
 
-Here is the simplest programs to print "Hello World!" and Pi number to console
+Here are the simplest programs to print "Hello World!" and Pi number to console
 
 ![](https://github.com/Vertiigor/BrainFuck/blob/master/BrainFuck/Pics/Example.png)
 
@@ -37,4 +37,4 @@ MemoryPointer - pointer to the current memory location. Initially, the pointer p
 | <             | Shift memory pointer left by 1 byte.  |
 | a - z, 0 - 9  | Store the ASCII code of this character in the byte of memory pointed to by the pointer.  |
 | [             | If the value of the current cell is zero, move forward in the program text to the character following the corresponding ] (including nesting).  |
-| ]             | if the value of the current cell is not zero, go back through the program text to the character [ (taking into account nesting).  |
+| ]             | If the value of the current cell is not zero, go back through the program text to the character [ (taking into account nesting).  |

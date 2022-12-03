@@ -7,7 +7,7 @@ I decided to create this interpreter in order to improve my skills.
 
 # Example of work
 
-Here is the simplest program to print "Hello World!" to console
+Here is the simplest programs to print "Hello World!" and Pi number to console
 
 ![](https://github.com/Vertiigor/BrainFuck/blob/master/BrainFuck/Pics/Example.png)
 

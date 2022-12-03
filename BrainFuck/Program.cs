@@ -5,44 +5,14 @@ namespace BrainFuck
 {
     internal class Program
     {
-        private const string sierpinskiTriangleBrainfuckProgram = @"
-                                >
-                               + +
-                              +   -
-                             [ < + +
-                            +       +
-                           + +     + +
-                          >   -   ]   >
-                         + + + + + + + +
-                        [               >
-                       + +             + +
-                      <   -           ]   >
-                     > + + >         > > + >
-                    >       >       +       <
-                   < <     < <     < <     < <
-                  <   [   -   [   -   >   +   <
-                 ] > [ - < + > > > . < < ] > > >
-                [                               [
-               - >                             + +
-              +   +                           +   +
-             + + [ >                         + + + +
-            <       -                       ]       >
-           . <     < [                     - >     + <
-          ]   +   >   [                   -   >   +   +
-         + + + + + + + +                 < < + > ] > . [
-        -               ]               >               ]
-       ] +             < <             < [             - [
-      -   >           +   <           ]   +           >   [
-     - < + >         > > - [         - > + <         ] + + >
-    [       -       <       -       >       ]       <       <
-   < ]     < <     < <     ] +     + +     + +     + +     + +
-  +   .   +   +   +   .   [   -   ]   <   ]   +   +   +   +   +
-";
-
         public static void Main()
         {
-            Brainfuck.Run(sierpinskiTriangleBrainfuckProgram, Console.Read, Console.Write);
-            Console.WriteLine("This was a Brainfuck demo using the Sierpinski triangle as an example.");
+            while (true)
+            {
+                Console.Write("$ ");
+                Brainfuck.Run(Console.ReadLine(), Console.Read, Console.Write);
+                Console.WriteLine();
+            }
 
             Console.ReadKey();
         }

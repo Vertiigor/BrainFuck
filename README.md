@@ -5,6 +5,12 @@ I accidentally caught cyberpsychosis.
 
 I decided to create this interpreter in order to improve my skills.
 
+# Example of work
+
+Here is the simplest program to print "Hello World!" to console
+
+![](https://github.com/Vertiigor/BrainFuck/blob/master/BrainFuck/Pics/Example.png)
+
 # How it works
 
 Scheme of the virtual machine:

@@ -2,10 +2,10 @@
 {
     public class BrainfuckBasicCommands
     {
+        const string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         public static void RegisterTo(IVirtualMachine vm, Func<int> read, Action<char> write)
         {
-            const string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-            vm.RegisterCommand('.', b => { write((char)vm.Memory[vm.MemoryPointer]); }) ;
+            vm.RegisterCommand('.', b => { write((char)vm.Memory[vm.MemoryPointer]); });
             vm.RegisterCommand('+', b => { vm.Memory[vm.MemoryPointer]++; });
             vm.RegisterCommand('-', b => { vm.Memory[vm.MemoryPointer]--; });
             vm.RegisterCommand(',', b => { vm.Memory[vm.MemoryPointer] = (byte)read(); });

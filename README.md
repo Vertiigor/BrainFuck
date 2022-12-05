@@ -17,13 +17,13 @@ Scheme of the virtual machine:
 
 ![](https://github.com/Vertiigor/BrainFuck/blob/master/BrainFuck/Pics/VirtualMachineScheme.png)
 
-Instructions - it's a program on BrainFuck.
+- Instructions - it's a program on BrainFuck.
 
-InstructionsPointer - pointer to the current function (instruction).
+- InstructionsPointer - pointer to the current function (instruction).
 
-Memory - byte array. The default size is 30000.
+- Memory - byte array. The default size is 30000.
 
-MemoryPointer - pointer to the current memory location. Initially, the pointer points to the null cell.
+- MemoryPointer - pointer to the current memory location. Initially, the pointer points to the null cell.
 
 # Instructions
 
